@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#circle {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.177);
+    border-radius: 50%;
+    border:1.5px solid #fff;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+}
+
+#main {
+    height: 95%;
+    width: 100%;
+    background-color: #BFEA88;
+    border-color: 2px bold #192928;
+}
+
+img {
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    left: 49px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    /* filter: brightness(70%); */
+    filter: drop-shadow(-30px 20px 20px #192928);
+
+}
+
+img:hover {
+    scale: .93;
+    filter: drop-shadow(10px 10px 20px #192928);
+}
+
+@font-face {
+    font-family: "arges";
+    src: url(Arges-NormalHeavy.woff2);
+}
+
+@font-face {
+    font-family: "Blackstone";
+    src: url(Blackstone.woff);
+}
+
+#main>#a {
+    font-family: "arges";
+    font-weight: 900;
+    font-size: 150px;
+    text-transform: uppercase;
+    padding: 10px 53px;
+    background-color: #192928;
+    position: absolute;
+    z-index: 1;
+    top: 280px;
+    left: 60%;
+    transform: translate(0%, 0%);
+    color: #BFEA88;
+}
+
+
+#main>#b {
+    font-family: "arges";
+    font-weight: 900;
+    font-size: 200px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 34px;
+    right: 0;
+    z-index: 1;
+    color: #192928;
+}
+
+h2 {
+    font-family: "Blackstone";
+    position: absolute;
+    bottom: 170px;
+    right: 180px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1.5s;
+    border-radius: 10px;
+}
+
+button {
+    padding: 15px 62px;
+    letter-spacing: 7px;
+    position: absolute;
+    bottom: 76px;
+    right: 595px;
+    font-family: "arges";
+    font-weight: 900;
+    font-size: 45px;
+    background-color: #86A45F;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+button:hover {
+    scale: 1.1;
+    background-color: #192928;
+    color: #BFEA88;
+    border:1.5px solid #92cb47;
+    box-shadow: 10px 10px 10px 0px#192928;
+}
+
+h2:hover {
+    background-color: #192928;
+    color: #BFEA88;
+    border:1.5px solid #86A45F;
+
+}
+
+#scrolling{
+    position: relative;
+    /* font-family: "arges"; */
+    padding-left: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    /* word-spacing: 1px; */
+    /* background: linear-gradient(to bottom, #d0f1b8, #90ad67); */
+}
